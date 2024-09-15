@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --textColor: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.5rem;
+  transition: 2s;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f81a06;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+
+body {
+  color: var(--textColor);
+  font-family: 'roboto';
+  font-size: 1.6rem;
+}
+
+main{
+  background: linear-gradient(#000000, #281B1B, #1D1414, #000000);
+}
+
+.padding-bottom{
+  padding-bottom: 10rem;
+}
+
+.subtitle {
+  margin-bottom: 7rem;
+
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+}
+.wrapper {
+  max-width: min(120rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Home */
+.container_Home {
+  padding-top: 10rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* background-color: blueviolet; */
+}
+
+.title {
+  margin-bottom: 5rem;
+
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 5.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.text_app {
+  margin-bottom: 7.5rem;
+  width: 50rem;
+  /* background-color: rgb(159, 137, 137); */
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn, .btnSecond {
+  width: 22rem;
+  height: 5rem;
+
+
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.9rem;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: rgba(192, 2, 2, 0.8);
+  box-shadow: 0.5rem 1rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover{
+  background: rgba(62, 4, 4, 0.7);
+}
+
+.second_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-color: brown; */
+}
+.second_box img {
+  width: 100%;
+}
+.container_midiaSocial, .container_midiaSocialFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  list-style: none;
+  /* background-color: blue; */
+}
+.container_midiaSocial li a svg {
+  width: 2rem;
+}
+.wave{
+  width: 100%;
+}
+#waveMobile{
+  display: none;
+}
+/* Home */
+
+
+/*Curso Obrigatório*/
+.container_curso {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  /* background-color: black; */
+}
+
+.container_Cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+  /* background-color: blueviolet; */
+}
+
+.Card {
+  height: 15.6rem;
+  width: 32rem;
+  padding: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+
+  border: 0rem 0rem 0.1rem 0.1rem solid #FF0505;
+  box-shadow: -0.2rem 0.5rem 1rem rgba(192, 2, 2, 0.5);
+  border-radius: 0.5rem;
+  background-color: #232323;
+}
+
+.imgIdea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgIdea .btn {
+  margin-top: 15rem;
+}
+
+.btnSecond {
+  display: none;
+}
+/*Curso Obrigatório*/
+
+
+/*O que você vai aprender*/
+.Cards_row {
+  padding: 2rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* background-color: aquamarine; */
+}
+
+.cardSecond {
+  width: 22rem;
+  height: 32rem;
+
+  padding: 4rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  border: 0rem 0rem 0.1rem 0.1rem solid #FF0505;
+  box-shadow: -0.2rem 0.5rem 1rem rgba(192, 2, 2, 0.5);
+  border-radius: 0.5rem;
+  background-color: #232323;
+}
+/*O que você vai aprender*/
+
+/*Depoimentos de alunos*/
+
+.videoContainer{
+  margin-block: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+
+}
+
+.seeMore 
+{
+  color: #D30C0C;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.seeMore:hover{
+  color: #9d1206;
+}
+
+
+/*container_ComQuemVoceVaiAprender*/
+.container_ComQuemVoceVaiAprender {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: #070707; */
+}
+
+.container_ComQuemVoceVaiAprender img {
+  width: 35rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 1rem 0.8rem rgba(0, 0, 0, 0.8);
+}
+
+/*container_ComQuemVoceVaiAprender*/
+
+
+/*FAQ*/
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contentBx{
+  position: relative;
+}
+
+.label {
+  padding: 2rem;
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #aaaaaab0;
+}
+
+.label::before {
+  content: '+';
+  margin-right: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-55%);
+
+  font-size: 3.5rem;
+}
+
+.contentBx.active .label::before {
+  content: '-';
+  font-size: 5rem;
+}
+
+
+.content p {
+  font-weight: 400;
+  line-height: 1.9rem;
+  letter-spacing: 0.1rem;
+}
+.content {
+  height: 0;
+  position: relative;
+  
+  overflow: hidden;
+  transition: all 0.5s;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #6c6c6c7b;
+}
+
+.contentBx.active .content{
+  padding: 2rem;
+  height: inherit;
+}
+
+
+.none {
+  display: none;
+}
+
+/*FAQ*/
+
+
+/*Rodapé*/
+footer {
+  padding-block: 5rem 2rem;
+  background: #000000;
+  border-top: 0.2rem solid #c40404de;
+}
+.backgroundButtonTop {
+  position: fixed;
+  bottom: 2.8rem;
+  right: 1.8rem;
+  width: 5rem;
+  height: 5rem;
+
+  border-radius: 50%;
+  background-color: #020202;
+}
+.btn_backTop {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+
+  /* background-color: #000000; */
+}
+.row li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_redesocialMax {
+  display: flex;
+  gap: 3.5rem;
+  /* background-color: rgb(15, 15, 95); */
+}
+.row svg {
+  width: 2rem;
+}
+
+/*Rodapé*/
+
+@media (max-width: 1400px)
+{
+  .videos{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1060px){
+  .second_box{
+    width: 40rem;
+  }
+  .container_midiaSocial {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .text_app {
+    margin-bottom: 7.5rem;
+    width: 35rem;
+    /* background-color: rgb(159, 137, 137); */
+  }
+
+  /*Curso Obrigatório*/
+  .container_curso {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* background-color: black; */
+  }
+  .container_Cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.5rem;
+    /* background-color: blueviolet; */
+  }
+  .Card {
+    height: 15.6rem;
+    width: 25rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .Card img{
+    width: 6rem;
+  }
+
+  /*Curso Obrigatório*/
+
+    /*O que você vai aprender*/
+    .cardSecond {
+      width: 20rem;
+      height: 30rem;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .cardSecond img{
+      width: 7rem;
+    }
+  
+    /*O que você vai aprender*/
+
+
+  .box_imgman {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .second_box {
+    margin: 0 auto;
+    /* background-color: rgb(46, 165, 42); */
+  }
+  .subtitle {
+      text-align: center;
+      margin-bottom: 7rem;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 4rem;
+      letter-spacing: 0.1rem;
+  }
+/*Home*/
+  .container_Home {
+    padding-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+
+    /* background-color: blueviolet; */
+  }
+  .first_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #000000; */
+  }
+  .text_app, .title {
+    text-align: center;
+  }
+  .wave {
+    display: none;
+  }
+  #waveMobile {
+    display: block;
+    width: 100%;
+  }
+/*Home*/
+
+
+/* Curso Obrigatório*/
+
+  .container_curso {
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .container_Cards {
+    align-items: center;
+    gap: 5.5rem;
+    /* background-color: #000000; */
+  }
+  .imgIdea {
+    width: 100%;
+  }
+  .imgIdea a {
+    display: none;
+  }
+
+  .btnSecond {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btnSecond:hover {
+    background: rgba(62, 4, 4, 0.7);
+  }
+
+
+/* Curso Obrigatório*/
+
+
+/*O que você vai aprender*/
+  .container_ComQuemVoceVaiAprender {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #070707; */
+  }
+  .Cards_row {
+    padding: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* background-color: aquamarine; */
+  }
+
+  .cardSecond {
+    width: 20rem;
+    height: 32rem;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+
+/*O que você vai aprender*/
+
+
+/*Footer*/
+  .container_midiaSocialFooter{
+    gap: 1.5rem;
+  }
+/*Footer*/
+}
